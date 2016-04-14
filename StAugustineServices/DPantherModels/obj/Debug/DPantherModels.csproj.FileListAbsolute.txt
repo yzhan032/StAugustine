@@ -1,0 +1,40 @@
+E:\Projects\DPanther\DPantherModels\bin\Debug\DPantherModels.dll.config
+E:\Projects\DPanther\DPantherModels\bin\Debug\DPantherModels.dll
+E:\Projects\DPanther\DPantherModels\bin\Debug\DPantherModels.pdb
+E:\Projects\DPanther\DPantherModels\bin\Debug\EntityFramework.dll
+E:\Projects\DPanther\DPantherModels\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\DPanther\DPantherModels\bin\Debug\SobekCM_Library.dll
+E:\Projects\DPanther\DPantherModels\bin\Debug\EntityFramework.xml
+E:\Projects\DPanther\DPantherModels\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\DPanther\DPantherModels\bin\Debug\SobekCM_Library.pdb
+E:\Projects\DPanther\DPantherModels\obj\Debug\DPantherModels.dll
+E:\Projects\DPanther\DPantherModels\obj\Debug\DPantherModels.pdb
+E:\Projects\DPanther\DPantherModels\obj\Debug\DPantherModels.csprojResolveAssemblyReference.cache
+E:\Projects\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.dll.config
+E:\Projects\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.dll
+E:\Projects\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.pdb
+E:\Projects\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.dll
+E:\Projects\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.pdb
+E:\Projects\stAug\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.pdb
+E:\Projects\stAug\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.pdb
+D:\Projects\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.dll
+D:\Projects\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.pdb
+D:\Projects\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.dll
+D:\Projects\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.pdb
+D:\Projects\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherModels\bin\Debug\DPantherModels.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherModels\obj\Debug\DPantherModels.pdb
+C:\StAugustineServices\DPantherModels\bin\Debug\DPantherModels.dll
+C:\StAugustineServices\DPantherModels\bin\Debug\DPantherModels.pdb
+C:\StAugustineServices\DPantherModels\obj\Debug\DPantherModels.dll
+C:\StAugustineServices\DPantherModels\obj\Debug\DPantherModels.pdb
+C:\projects\saug\DPantherModels\bin\Debug\DPantherModels.dll
+C:\projects\saug\DPantherModels\bin\Debug\DPantherModels.pdb
+C:\projects\saug\DPantherModels\obj\Debug\DPantherModels.csprojResolveAssemblyReference.cache
+C:\projects\saug\DPantherModels\obj\Debug\DPantherModels.dll
+C:\projects\saug\DPantherModels\obj\Debug\DPantherModels.pdb

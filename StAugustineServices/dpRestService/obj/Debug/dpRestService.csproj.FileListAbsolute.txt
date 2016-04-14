@@ -1,0 +1,70 @@
+D:\Projects\dpanther_stagustine\dpRestService\bin\dpRestService.XML
+D:\Projects\dpanther_stagustine\dpRestService\bin\dpRestService.dll
+D:\Projects\dpanther_stagustine\dpRestService\bin\dpRestService.pdb
+D:\Projects\dpanther_stagustine\dpRestService\bin\CsQuery.dll
+D:\Projects\dpanther_stagustine\dpRestService\bin\DPantherBusiness.dll
+D:\Projects\dpanther_stagustine\dpRestService\bin\DPantherModels.dll
+D:\Projects\dpanther_stagustine\dpRestService\bin\EntityFramework.dll
+D:\Projects\dpanther_stagustine\dpRestService\bin\EntityFramework.SqlServer.dll
+D:\Projects\dpanther_stagustine\dpRestService\bin\DPantherBusiness.pdb
+D:\Projects\dpanther_stagustine\dpRestService\bin\DPantherBusiness.xml
+D:\Projects\dpanther_stagustine\dpRestService\bin\DPantherModels.pdb
+D:\Projects\dpanther_stagustine\dpRestService\bin\CsQuery.xml
+D:\Projects\dpanther_stagustine\dpRestService\bin\EntityFramework.xml
+D:\Projects\dpanther_stagustine\dpRestService\bin\EntityFramework.SqlServer.xml
+D:\Projects\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.csprojResolveAssemblyReference.cache
+D:\Projects\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.dll
+D:\Projects\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.pdb
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.dll.config
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.XML
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.pdb
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\CsQuery.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherBusiness.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherModels.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.SqlServer.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherBusiness.pdb
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherBusiness.xml
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherModels.pdb
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\CsQuery.xml
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.xml
+E:\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.SqlServer.xml
+E:\Projects\stAug\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.csprojResolveAssemblyReference.cache
+E:\Projects\stAug\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.dll
+E:\Projects\stAug\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.XML
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\dpRestService.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\CsQuery.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherBusiness.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherModels.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.SqlServer.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherBusiness.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherBusiness.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\DPantherModels.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\CsQuery.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\bin\EntityFramework.SqlServer.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\dpRestService\obj\Debug\dpRestService.pdb
+C:\StAugustineServices\dpRestService\bin\dpRestService.XML
+C:\StAugustineServices\dpRestService\obj\Debug\dpRestService.csprojResolveAssemblyReference.cache
+C:\StAugustineServices\dpRestService\obj\Debug\dpRestService.dll
+C:\StAugustineServices\dpRestService\obj\Debug\dpRestService.pdb
+C:\StAugustineServices\dpRestService\bin\dpRestService.dll.config
+C:\StAugustineServices\dpRestService\bin\dpRestService.dll
+C:\StAugustineServices\dpRestService\bin\dpRestService.pdb
+C:\StAugustineServices\dpRestService\bin\CsQuery.dll
+C:\StAugustineServices\dpRestService\bin\DPantherBusiness.dll
+C:\StAugustineServices\dpRestService\bin\DPantherModels.dll
+C:\StAugustineServices\dpRestService\bin\EntityFramework.dll
+C:\StAugustineServices\dpRestService\bin\EntityFramework.SqlServer.dll
+C:\StAugustineServices\dpRestService\bin\DPantherBusiness.pdb
+C:\StAugustineServices\dpRestService\bin\DPantherBusiness.xml
+C:\StAugustineServices\dpRestService\bin\DPantherModels.pdb
+C:\StAugustineServices\dpRestService\bin\CsQuery.xml
+C:\StAugustineServices\dpRestService\bin\EntityFramework.xml
+C:\StAugustineServices\dpRestService\bin\EntityFramework.SqlServer.xml

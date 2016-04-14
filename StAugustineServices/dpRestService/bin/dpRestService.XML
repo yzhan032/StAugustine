@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dpRestService</name>
+    </assembly>
+    <members>
+        <member name="T:dpRestService.dpCollectionBrief">
+            <summary>
+            dPanther digital collection brief information class
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollectionBrief.BibID">
+            <summary>
+            BibID : | FI12040601
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollectionBrief.Title">
+            <summary>
+            collection title:  | Granada Entrance under construction. Coral Gables, Florida
+            </summary>
+        </member>
+        <member name="T:dpRestService.dpCollection">
+            <summary>
+            dPanther digital collection class   
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.BibID">
+            <summary>
+            FI number: | FI12040602
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Title">
+            <summary>
+            Title:  | Granada Entrance. Coral Gables, Florida
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.MainThumbnail">
+            <summary>
+            Thumbnail: 3341990__FI12040602_A_jp2_thm.jpg
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.MainJPEG">
+            <summary>
+            main JEPG: 3341990__FI12040602_A_jp2_.jpg
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Publisher">
+            <summary>
+            Publisher of the collection
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Author">
+            <summary>
+            Author: Fishbaugh, W. A. (William A.)
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Spatial_KML">
+            <summary>
+            spatial reference: P|25.763611,-80.275555
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.AggregationCodes">
+            <summary>
+            aggregation code: [CGM,DRR...]
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Institution_Display">
+            <summary>
+            Institution: Florida International University
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Edition_Display">
+            <summary>
+            Edition
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Subjects_Display">
+            <summary>
+            Subjects: Coral Gables (Fla.)--Buildings, structures, etc.--Pictorial works|Coral Gables (Fla.)--History--Pictorial works|Historic sites--Florida|Urban design
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.DiskSize_MB">
+            <summary>
+            Disk Size (MB): 10439
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.LastSaved">
+            <summary>
+            Last saved date: 2014-01-16 12:10:14.703
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Deleted">
+            <summary>
+            0: display in the system; 1: not display in the system
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.VID">
+            <summary>
+            VID: 00001 (use to get the path of collection)
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Description">
+            <summary>
+            Description or notes of the item
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.Language">
+            <summary>
+            Language: English/French/Spanish
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.FileList">
+            <summary>
+            List of files including file path: c:/file/FI01010100_1.PDF|c:/file/FI01010100_2.PDF
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.uploadUser">
+            <summary>
+            true: upload the record to dpanther server; false: don't upload the record to dpanther server
+            </summary>
+        </member>
+        <member name="P:dpRestService.dpCollection.tracking">
+            <summary>
+            true: record save to dcc tracking table; false: don't save the record to dcc tracking table
+            </summary>
+        </member>
+        <member name="T:dpRestService.dpCollectionService">
+            <summary>
+            dPanther RESTful service: digital collection
+            </summary>
+        </member>
+        <member name="F:dpRestService.dpCollectionService.username">
+            <summary>
+            user name
+            </summary>
+        </member>
+        <member name="F:dpRestService.dpCollectionService.domain">
+            <summary>
+            domain name
+            </summary> 
+        </member>
+        <member name="F:dpRestService.dpCollectionService.password">
+            <summary>
+            user password
+            </summary>
+        </member>
+        <member name="M:dpRestService.dpCollectionService.testByFI(System.String,System.String)">
+            <summary>
+            get detailed information of digital collections from dPanther database (for the dpanther right panel full citation, list of files and map it)
+            </summary>
+            <param name="finum">FI number: FI12041019 (fuzzy query in the database, FI number could be FI1204)</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:dpRestService.dpCollectionService.getColDetailByFI(System.String,System.String)">
+            <summary>
+            get detailed information of digital collections from dPanther database (for the dpanther right panel full citation, list of files and map it)
+            </summary>
+            <param name="finum">FI number: FI12041019 (fuzzy query in the database, FI number could be FI1204)</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="T:dpRestService.Global">
+            <summary>
+            global class of dpRestService
+            </summary>
+        </member>
+    </members>
+</doc>

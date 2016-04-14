@@ -1,0 +1,20 @@
+.widget .flickr-feed, .flickr-feed {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.flickr-feed li {
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+	background:#444;
+    margin-right: 5px;
+}
+.flickr-feed li a {
+    border: 1px solid #DDDDDD;
+    display: block;
+    padding: 2px;
+	opacity:1;
+	background:#fff;
+}
+.flickr-feed li a:hover{opacity:0.6;}

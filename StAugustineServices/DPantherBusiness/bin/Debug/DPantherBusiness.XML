@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DPantherBusiness</name>
+    </assembly>
+    <members>
+        <member name="T:DPantherBusiness.Config">
+            <summary>
+            database configuration class
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.Config.ConnectString">
+            <summary>
+            dPanther database connection string
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.Config.MailHost">
+            <summary>
+            const of dPanther mail host
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.Config.LevWebMasterEmailAddress">
+            <summary>
+            const of dPanther web mail address
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.Config.#ctor(System.String)">
+            <summary>
+            set up database connection string for different databases
+            </summary>
+            <param name="strName">project name [DPantherClean,BIKE,GLOWS]</param>
+        </member>
+        <member name="M:DPantherBusiness.Config.GetConnection">
+            <summary>
+            get a database sql connection
+            </summary>
+            <returns>a new instance of a sql connection</returns>
+        </member>
+        <member name="T:DPantherBusiness.DBO">
+            <summary>
+            database object class
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.DBO.exeDataset(System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            execute a store procedure to return a dataset
+            </summary>
+            <param name="sSQL">The name of the store procedure</param>
+            <param name="dbName">The name of the database</param>
+            <param name="hParameter">the parameter table</param>
+            <returns>
+            a dataset of the result
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.exeDatasetText(System.String,System.String)">
+            <summary>
+            execute a store procedure to return a dataset
+            </summary>
+            <param name="sSQL">The name of the store procedure</param>
+            <param name="dbName">The name of the database</param>
+            <returns>
+            a dataset of the result
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.returnOneFieldValue(System.String,System.String)">
+            <summary>
+            execute a sql statement to return a single value
+            </summary>
+            <param name="sSQL">the sql statement</param>
+            <param name="dbName">The name of the database</param>
+            <returns>
+            a object value
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.returnOneFieldValue(System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            execute a store procedure to return a single value 
+            </summary>
+            <param name="sSQL">The name of the store procedure</param>
+            <param name="dbName">The name of the database</param>
+            <param name="hParameter">the parameter table</param>
+            <returns>
+            a object value
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.returnValueOfSP(System.String,System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            execute a store procedure to  get a return value from SP
+            </summary>
+            <param name="sSQL">The name of the store procedure</param>
+            <param name="outputID">The name of the output parameter</param>
+            <param name="dbName">The name of the database</param>
+            <param name="hParameter">the parameter table</param>
+            <returns>
+            a object value returned from SP
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.hasRecords(System.String,System.String)">
+            <summary>
+            check if the data esist based a sql statement
+            </summary>
+            <param name="sSQL">
+            the sql statement
+            </param>
+            <param name="dbName">The name of the database</param>
+            <returns>
+            a bool flag
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.dbChecker(System.String)">
+            <summary>
+            check if the database connection can be established
+            </summary>
+            <param name="dbName">The name of the database</param>
+            <returns>
+            a bool flag
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.exeSQL(System.String,System.String)">
+            <summary>
+            ExecuteNonQuery for insert, update, and delete function based on a sql statement
+            </summary>
+            <param name="sSQL">The sql statement</param>
+            <param name="dbName">The name of the database</param>
+        </member>
+        <member name="M:DPantherBusiness.DBO.exeSQLText(System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            ExecuteNonQuery for insert, update, and delete function based on a sql statement with parameters
+            </summary>
+            <param name="sSQL">The sql statement</param>
+            <param name="dbName">The name of the database</param>
+            <param name="hParameter">the parameters table</param>
+        </member>
+        <member name="M:DPantherBusiness.DBO.exeSQL(System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            ExecuteNonQuery for insert, update, and delete function based on a store procedure
+            </summary>
+            <param name="SPName">the name of the store procedure</param>
+            <param name="dbName">The name of the database</param>
+            <param name="hParameter">the parameters table</param>
+        </member>
+        <member name="M:DPantherBusiness.DBO.BuildSqlParameters(System.Collections.Hashtable)">
+            <summary>
+            convert hashtable to sql parameter list
+            </summary>       
+            <param name="hParameter">the parameters table</param>
+            <returns>
+            a sql parameter list
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.BuildSqlParameterCollection(System.Collections.Hashtable,System.Data.SqlClient.SqlParameterCollection)">
+            <summary>
+            set a collection of sql parameters from a hashtable 
+            </summary>       
+            <param name="hParameter">the hashtable</param>
+            <param name="paramCollection">the sqlparameterCollection to be set</param>
+        </member>
+        <member name="M:DPantherBusiness.DBO.GetXmlStringFromStoredProcedure(System.String,System.Collections.Hashtable,System.String)">
+            <summary>
+            return the XML string of a specific search result;
+            </summary>
+            <param name="procedureName">name of a store procedure</param>
+            <param name="hParameter">the parameters table</param>
+            <param name="dbName">database name</param>
+            <returns>string of the XML result</returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.GetBusinessObjectListFromProc``1(System.String,System.String,System.Collections.Hashtable)">
+            <summary>
+            return the busunessObject list from a store procedure; 
+            To be tested
+            </summary>
+            <param name="procName">name of a store procedure</param>
+            <param name="dbName">database name</param>
+            <param name="hParameter">the parameters table</param>
+            <typeparam name="T">generic type, e.g. int,float,bool</typeparam>
+            <returns>a generic list of businessObject</returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.GetBusinessObjectListFromDataSet``1(System.Data.DataSet,System.Int32)">
+            <summary>
+            return the busunessObject list from a dataset; 
+            To be tested
+            </summary>
+            <param name="dsSet">name of a dataset</param>
+            <param name="indexTable">index table of the dataset</param>
+            <typeparam name="T">generic type, e.g. int,float,bool</typeparam>
+            <returns>a generic list of businessObject</returns>
+        </member>
+        <member name="M:DPantherBusiness.DBO.SetPropertiesFromDataRow(System.Data.DataRow,System.Object)">
+            <summary>
+            set property value from a datarow 
+            </summary>       
+            <param name="dataRow">the parameter row</param>
+            <param name="businessEntity">the propertyInfo object</param>
+        </member>
+        <member name="M:DPantherBusiness.dpCollectionReturn.getDigitalObjectByAggregationPageTest(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            test function
+            </summary>
+            <param name="strAgg"></param>
+            <param name="condition"></param>
+            <param name="strStartYear"></param>
+            <param name="strEndYear"></param>
+            <param name="strPage"></param>
+            <param name="strPageLimit"></param>
+            <param name="sort"></param>
+            <param name="needFacet"></param>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DPantherBusiness.dpCollectionReturn.facetResult(System.Data.DataTable)">
+            <summary>
+            get the list of facet result
+            </summary>
+            <param name="dt">facet datatable from DB by facet type</param>
+            <returns>a list of the facet result including value and count</returns>
+        </member>
+        <member name="M:DPantherBusiness.dpCollectionReturn.addListwizFacet(System.Collections.Generic.List{DPantherModels.dpModels.DigitalObjectBrif}@,System.Data.DataRow)">
+            <summary>
+            bulid the list of digital collections with detailed information
+            </summary>
+            <param name="li">returned list of digital collections</param>
+            <param name="dr">data record from DB</param>
+            <returns>bibID of each record</returns>
+        </member>
+        <member name="T:DPantherBusiness.dpDirectory">
+            <summary>
+            dPanther directory class
+            </summary>
+        </member>
+        <member name="P:DPantherBusiness.dpDirectory.dirPath">
+            <summary>
+            directory path
+            </summary>
+        </member>
+        <member name="P:DPantherBusiness.dpDirectory.webUrl">
+            <summary>
+            the web access url of the directory
+            </summary>
+        </member>
+        <member name="P:DPantherBusiness.dpDirectory.dirType">
+            <summary>
+            directory type: [1-kmlHarvest;2-kmlPublish ;3-kmlPublishURL;4-pubRequest;5-pubTpl;6-geoporatlTemp]
+            </summary>
+        </member>
+        <member name="P:DPantherBusiness.dpDirectory.applicationName">
+            <summary>
+            application name 
+            </summary>
+        </member>
+        <member name="P:DPantherBusiness.dpDirectory.applicationCode">
+            <summary>
+            applicaiton code in the database
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.dpDirectory.#ctor(System.String,System.String)">
+            <summary>
+            directory class to manage application directories
+            </summary>
+            <param name="strType">
+            the type name of the directory
+            </param>
+            <param name="strAppCode">
+            application code
+            </param>
+        </member>
+        <member name="M:DPantherBusiness.dpDirectory.getDIRbyTypeApp(System.String,System.String)">
+            <summary>
+            get [dirPath] from dir table
+            </summary>
+            <param name="strType">
+            type ID
+            </param>
+            <param name="strAppID">
+            application ID
+            </param>
+            <returns>
+            return the path as a string
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.dpDirectory.getDIRbyTypeAppcode(System.String,System.String)">
+            <summary>
+            get [dirPath] from view [dpView_appDirs]
+            </summary>
+            <param name="strType">
+            [disType] : "purlTemp", "geoporatlTemp", "pubTpl"
+            </param>
+            <param name="strAppCode">
+            [applicationCode] : "dpAdmin", "WAWASH". "CGM"
+            </param>
+            <returns>
+            [dirPath]@string: the access path based on the request
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.dpDirectory.getDIRWebbyTypeAppcode(System.String,System.String)">
+            <summary>
+            get [webUrl] from view [dpView_appDirs]
+            </summary>
+            <param name="strType">
+            [disType] : "purlTemp", "geoporatlTemp", "pubTpl"
+            </param>
+            <param name="strAppCode">
+            [applicationCode] : "dpAdmin", "WAWASH". "CGM"
+            </param>
+            <returns>
+            [webUrl]@string: the web access path based on the request
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.dpDirectory.getServiceURLbyTypeAppcode(System.String,System.String,System.String)">
+            <summary>
+            get [webUrl] from view [dpView_appDirs] for a service
+            </summary>
+            <param name="strType">
+            [disType] : "purlTemp", "geoporatlTemp", "pubTpl"
+            </param>
+            <param name="strAppCode">
+            [applicationCode] : "dpAdmin", "WAWASH". "CGM"
+            </param>
+            <param name="serviceName">
+            [dirName] : "dpPurlService"
+            </param>
+            <returns>
+            [webUrl]@string: the web access path based on the request
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.dpDirectory.dtDirectory(System.String,System.String)">
+            <summary>
+            Method to get all information from view [dpView_appDirs]
+            </summary>
+            <param name="strType">
+            [disType] : "purlTemp", "geoporatlTemp", "pubTpl"
+            </param>
+            <param name="strAppCode">
+            [applicationCode] : "dpAdmin", "WAWASH". "CGM"
+            </param>
+            <returns>
+            datatable: [dirPath], [webUrl], [dirType], [applicationName], [applicationCode], [webAccess] 
+            </returns>
+        </member>
+        <member name="T:DPantherBusiness.GeneralFunction">
+            <summary>
+            general functions used in dPanther
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.GeneralFunction.dirPath">
+            <summary>
+            directory for digital collection repository
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.GeneralFunction.username">
+            <summary>
+            user name
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.GeneralFunction.domain">
+            <summary>
+            domain name
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.GeneralFunction.password">
+            <summary>
+            user password
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.GeneralFunction.getPath(System.String)">
+            <summary>
+            method to get a list of image path from a mets file
+            </summary>
+            <param name="xmlPath">
+            the sub path to the mets file: "\\FI\\11\\07\\07\\21\\00001\\FI11070721_00001.mets.xml"
+            </param>
+            <returns>
+            return a ArrayList of images
+            </returns>
+        </member>
+        <member name="M:DPantherBusiness.GeneralFunction.getPathNew(System.String)">
+            <summary>
+            method to read structure map from a mets file and genereate the HTML treeview code
+            </summary>
+            <param name="xmlPath">
+            the sub path to the mets file: "\\FI\\11\\07\\07\\21\\00001\\FI11070721_00001.mets.xml"
+            </param>
+            <returns>
+            return html code for the structure map. 
+            e.g. 
+            <ul id="uldownloadTree">
+              <li>Granada Entrance. Coral Gables, Florida
+               <ul>
+                  <li><a class="CitationSectionTitle2-link">Recto</a></li>
+                  <li><a class="CitationSectionTitle2-link">Verso</a></li>
+                </ul>
+              </li>
+            </ul> 
+            </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:DPantherBusiness.GeneralFunction.readxml(System.Xml.XmlNodeList,System.Text.StringBuilder)" -->
+        <member name="M:DPantherBusiness.GeneralFunction.Serialize(System.Object)">
+            <summary>
+            serialize the server end array into a javascript array
+            </summary>
+            <param name="o">
+            The array on server end
+            </param>
+            <returns>
+            serialized javascript array
+            </returns>
+        </member>
+        <member name="T:DPantherBusiness.Log">
+            <summary>
+            system log class
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.Log.addLog(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            add log to database
+            </summary>
+            <param name="userInfo">user name</param>
+            <param name="strActioin">user action such as log in, save, update</param>
+            <param name="strDesc">Detailed description of user action</param>
+            <param name="strType">log type [1- dblog;2-searchlog;3-userlog;4-operationlog;5-filelog;6-errorlog]</param>
+            <param name="strApp">application ID</param>
+        </member>
+        <member name="M:DPantherBusiness.Log.addItemSearchLog(System.String,System.String,System.String[],System.String)">
+            <summary>
+            add file log into dpLog/itemLog folder for any item search behaviors
+            </summary>
+            <param name="strUser">user id</param>
+            <param name="strUserAddress">user's ip address</param>
+            <param name="finums">array of FI numbers involved in this behaviors</param>
+            <param name="condition">search condition</param>
+            <returns>log status</returns>
+        </member>
+        <member name="T:DPantherBusiness.UNCAccessWithCredentials">
+            <summary>
+            UNCAccess class 
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.UNCAccessWithCredentials.#ctor">
+            <summary>
+            A disposeable class that allows access to a UNC resource with credentials.
+            </summary>
+        </member>
+        <member name="P:DPantherBusiness.UNCAccessWithCredentials.LastError">
+            <summary>
+            The last system error code returned from NetUseAdd or NetUseDel.  Success = 0
+            </summary>
+        </member>
+        <member name="M:DPantherBusiness.UNCAccessWithCredentials.NetUseWithCredentials(System.String,System.String,System.String,System.String)">
+            <summary>
+            Connects to a UNC path using the credentials supplied.
+            </summary>
+            <param name="UNCPath">Fully qualified domain name UNC path</param>
+            <param name="User">A user with sufficient rights to access the path.</param>
+            <param name="Domain">Domain of User.</param>
+            <param name="Password">Password of User</param>
+            <returns>True if mapping succeeds.  Use LastError to get the system error code.</returns>
+        </member>
+        <member name="M:DPantherBusiness.UNCAccessWithCredentials.NetUseDelete">
+            <summary>
+            Ends the connection to the remote resource 
+            </summary>
+            <returns>True if it succeeds.  Use LastError to get the system error code</returns>
+        </member>
+    </members>
+</doc>

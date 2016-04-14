@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="www.DPantherRESTServices.com" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\patrickstanley\\Documents\\Visual\ Studio\ 2012\\Projects\\stAug\\dpanther_stagustine\\DPantherRESTServices\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\patrickstanley\\Documents\\Visual\ Studio\ 2012\\Projects\\stAug\\dpanther_stagustine\\DPantherRESTServices\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DPantherCleanConnectionString-Web.config Connection String" description="DPantherCleanConnectionString Connection String used in web.config by the application to access the database." value="Data Source=LIB-UFDC-CACHE\UFDCPROD;initial catalog=SobekTest;integrated security=Yes;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\patrickstanley\\Documents\\Visual\ Studio\ 2012\\Projects\\stAug\\dpanther_stagustine\\DPantherRESTServices\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DPantherCleanConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,18 @@
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\bin\Release\FileUploadLibrary.XML
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\bin\Release\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\bin\Release\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\obj\Release\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\obj\Release\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\obj\Release\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\bin\Release\FileUploadLibrary.XML
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\bin\Release\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\bin\Release\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\obj\Release\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\obj\Release\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\obj\Release\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\bin\Release\FileUploadLibrary.XML
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\bin\Release\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\bin\Release\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\obj\Release\FileUploadLibrary.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\obj\Release\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\obj\Release\FileUploadLibrary.pdb

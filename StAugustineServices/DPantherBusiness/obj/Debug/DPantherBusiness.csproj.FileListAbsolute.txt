@@ -1,0 +1,150 @@
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\DPantherBusiness.dll.config
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\CsQuery.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\DPantherModels.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\EntityFramework.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\fdotModels.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Library.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Resource_Object.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Tools.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Microsoft.ApplicationServer.Caching.Client.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Microsoft.ApplicationServer.Caching.Core.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SolrNet.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Zen.Barcode.Core.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\GemBox.Spreadsheet.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Zoom.Net.YazSharp.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\Zoom.Net.dll
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\DPantherModels.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\fdotModels.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Library.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Library.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Resource_Object.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Resource_Object.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Tools.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SobekCM_Tools.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\CsQuery.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\EntityFramework.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SolrNet.pdb
+E:\Projects\DPanther\DPantherBusiness\bin\Debug\SolrNet.xml
+E:\Projects\DPanther\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+E:\Projects\DPanther\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+E:\Projects\DPanther\DPantherBusiness\obj\Debug\DPantherBusiness.pdb
+E:\Projects\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+E:\Projects\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.pdb
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.dll.config
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.pdb
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.xml
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.xml
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.pdb
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.xml
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.xml
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+E:\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.pdb
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.pdb
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.xml
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.xml
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Projects\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+D:\Projects\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+D:\Projects\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\DPantherModels.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\CsQuery.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Debug\DPantherBusiness.pdb
+C:\StAugustineServices\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+C:\StAugustineServices\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+C:\StAugustineServices\DPantherBusiness\bin\Debug\CsQuery.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\DPantherModels.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\EntityFramework.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\StAugustineServices\DPantherBusiness\bin\Debug\DPantherModels.pdb
+C:\StAugustineServices\DPantherBusiness\bin\Debug\CsQuery.xml
+C:\StAugustineServices\DPantherBusiness\bin\Debug\EntityFramework.xml
+C:\StAugustineServices\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+C:\StAugustineServices\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\StAugustineServices\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+C:\StAugustineServices\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+C:\StAugustineServices\DPantherBusiness\obj\Debug\DPantherBusiness.pdb
+C:\projects\saug\DPantherBusiness\bin\Debug\DPantherBusiness.XML
+C:\projects\saug\DPantherBusiness\bin\Debug\DPantherBusiness.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\DPantherBusiness.pdb
+C:\projects\saug\DPantherBusiness\bin\Debug\CsQuery.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\DPantherModels.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\EntityFramework.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\System.Data.SqlServerCe.Entity.dll
+C:\projects\saug\DPantherBusiness\bin\Debug\DPantherModels.pdb
+C:\projects\saug\DPantherBusiness\bin\Debug\CsQuery.xml
+C:\projects\saug\DPantherBusiness\bin\Debug\EntityFramework.xml
+C:\projects\saug\DPantherBusiness\bin\Debug\EntityFramework.SqlServer.xml
+C:\projects\saug\DPantherBusiness\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\projects\saug\DPantherBusiness\obj\Debug\DPantherBusiness.csprojResolveAssemblyReference.cache
+C:\projects\saug\DPantherBusiness\obj\Debug\DPantherBusiness.dll
+C:\projects\saug\DPantherBusiness\obj\Debug\DPantherBusiness.pdb

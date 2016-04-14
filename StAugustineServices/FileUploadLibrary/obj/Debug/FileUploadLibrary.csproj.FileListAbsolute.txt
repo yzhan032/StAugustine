@@ -1,0 +1,44 @@
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC Web\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\inetpub\wwwroot\UFDC\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\msulliva\Desktop\Version 3.0.4b\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\msulliva\Desktop\Version 3.0.4b\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\Users\msulliva\Desktop\Version 3.0.4b\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\Users\msulliva\Desktop\Version 3.0.4b\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\Users\msulliva\Desktop\Version 3.0.4b\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\Users\msulliva\Desktop\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\msulliva\Desktop\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\Users\msulliva\Desktop\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\Users\msulliva\Desktop\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\Users\msulliva\Desktop\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\Users\msulliva\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\msulliva\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\Users\msulliva\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\Users\msulliva\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.csprojResolveAssemblyReference.cache
+C:\Users\msulliva\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\Users\msulliva\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\Stats Reader\Version 2.2\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\obj\Debug\FileUploadLibrary.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb

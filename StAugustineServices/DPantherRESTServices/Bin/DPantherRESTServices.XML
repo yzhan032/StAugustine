@@ -1,0 +1,462 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DPantherRESTServices</name>
+    </assembly>
+    <members>
+        <member name="T:DPantherRESTServices.IDPantherServices">
+            <summary>
+            dPanther digital object services
+            </summary>
+        </member>
+        <member name="M:DPantherRESTServices.IDPantherServices.GetDigitalObjectByAggregationPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            get 20 digital object by aggregation and search criteria: 'CGM', 'condition', '1', '1', '1', '20'
+            </summary>
+            <param name="aggregation">"CGM","DRR"</param>
+            <param name="condition">        
+            combined multiple facet conditions and 1 search condition (up to 5 in total);
+            format: ~term^attribute
+            **e.g.  default:"1" return the whole dataset; 
+                    [facet conditions] language:English;SubjectGeoAre:Coral Gables (Fla.) [advanced search condition] title: florida
+                    ~English^Language~Coral Gables (Fla.)^SubjectGeoArea~florida^Title
+                    
+            </param>
+            <param name="startYear">default:"1"</param>
+            <param name="endYear">default:"1"</param>
+            <param name="page">default:"1"; current page number</param>
+            <param name="pageLimit">20</param>
+            <returns>top 20 digital objects by aggregation,total number and year ranges</returns>
+        </member>
+        <member name="M:DPantherRESTServices.IDPantherServices.GetDigitalObjectByLocationPage(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            get the top 20 digital object by location: '25.7195457','-80.2786619','1','20'
+            </summary>
+            <param name="aggregation">"CGM","DRR"</param>
+            <param name="strLat">latitude</param>
+            <param name="strLng">longitude</param>
+            <param name="page">default:"1"</param>
+            <param name="pageLimit">20</param>
+            <returns>a list of digital objects of selected location, total number and year ranges</returns>
+        </member>
+        <member name="T:DPantherRESTServices.DigitalObject">
+            <summary>
+            dPanther digital collection detailed information
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Title">
+            <summary>
+            digital item title
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Subjects">
+            <summary>
+            list of digital item subjects
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Description">
+            <summary>
+            description of digital item
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Contributor">
+            <summary>
+            contributor of digital item
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.CreateDate">
+            <summary>
+            create date
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.PublishYear">
+            <summary>
+            publish year
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Type">
+            <summary>
+            digital item type
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Format">
+            <summary>
+            format
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Rights">
+            <summary>
+            rights
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.publishPlace">
+            <summary>
+            publish place
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.DownloadLink">
+            <summary>
+            download link
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Identifier">
+            <summary>
+            identifier: FI number
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Author">
+            <summary>
+            authors
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Publisher">
+            <summary>
+            publisher
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.Thumbnail">
+            <summary>
+            thumbnail 
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.mainLat">
+            <summary>
+            geolocation lattitude
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.mainLng">
+            <summary>
+            geolocation longitude
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.BibID">
+            <summary>
+            BibID: FI number
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.VID">
+            <summary>
+            VID:00001
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.htmlContent">
+            <summary>
+            static HTML page with metadata information
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObject.downloadTree">
+            <summary>
+            HTML treeview of file list
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.DigitalObjectBrif">
+            <summary>
+            digital collection brief information
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.Title">
+            <summary>
+            digital item title
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.Author">
+            <summary>
+            digital item authors
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.PublishYear">
+            <summary>
+            publish year
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.Type">
+            <summary>
+            digital item type
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.Thumbnail">
+            <summary>
+            thumbnail
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.mainLat">
+            <summary>
+            geolocation lattitude
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.mainLng">
+            <summary>
+            geolocation longitude
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.publishPlace">
+            <summary>
+            publish place
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.DownloadLink">
+            <summary>
+            list of download link
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.downloadTree">
+            <summary>
+            HTML treeview of file list
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.BibID">
+            <summary>
+            Bib ID: FI number
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.VID">
+            <summary>
+            VID:00001
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectBrif.htmlContent">
+            <summary>
+            static HTML page with metadata information
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.FacetObject">
+            <summary>
+            facet result object: [facet attribute:count]
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.FacetObject.Attribute">
+            <summary>
+            facet attribute:[subjectTopic, publisher, subjectGeoArea, Author, Language]
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.FacetObject.Count">
+            <summary>
+            number of items
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.GeoLocationObject">
+            <summary>
+            geo location object
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.GeoLocationObject.Lat">
+            <summary>
+            lattitude
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.GeoLocationObject.Log">
+            <summary>
+            longitude
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.GeoLocationObject.Address">
+            <summary>
+            address
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.ReturnedDigitalObject">
+            <summary>
+            digital collection object returned from database
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.Total">
+            <summary>
+            total number of items
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.Pager">
+            <summary>
+            current page
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.MaxYear">
+            <summary>
+            maximum year
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.MinYear">
+            <summary>
+            minimum year
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.FacetObjectList">
+            <summary>
+            facet object list returned from database
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.DigitalObjectList">
+            <summary>
+            digital object list
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.appInfo">
+            <summary>
+            application information returned from database
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.geoObjectList">
+            <summary>
+            list of geolocation
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedDigitalObject.FIlist">
+            <summary>
+            list of FI numbers
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.ReturnedFacetObject">
+            <summary>
+            list of facet result from database [subjectTopic, publisher, subjectgeoArea, author, language]
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.SubjectTopic">
+            <summary>
+            facet by subject topic
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.Publisher">
+            <summary>
+            facet by publisher
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.SubjectGeoArea">
+            <summary>
+            facet by location area
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.Author">
+            <summary>
+            facet by author
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.Language">
+            <summary>
+            facet by language
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.Type">
+            <summary>
+            facet by type
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedFacetObject.Aggregation">
+            <summary>
+            facet by aggregation
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.ReturnedAppObject">
+            <summary>
+            application object
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedAppObject.appLogo">
+            <summary>
+            application logo
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedAppObject.appTitle">
+            <summary>
+            application title
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedAppObject.appType">
+            <summary>
+            application type
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.ReturnedAppObject.appFooter">
+            <summary>
+            application footer
+            </summary>
+        </member>
+        <member name="T:DPantherRESTServices.DigitalObjectService">
+            <summary>
+            dPanther digital object service
+            </summary>
+        </member>
+        <member name="F:DPantherRESTServices.DigitalObjectService.dbDistance05mil">
+            <summary>
+            the buffer size use to get digital object by coordinates
+            **No longer use in the new system
+            </summary>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.GetDigitalObjectByAggregation(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            get all ditigal objects by aggregation:"DRR","florida","1","1","1","0";
+            ***No longer use in the new system
+            </summary>
+            <param name="strAgg">"CGM","WAWASH","DRR"</param>
+            <param name="condition">default:"1"; the search criteria which user input</param>
+            <param name="strFileType">default:"1";"book","Photograph","Archival","Unknown"</param>
+            <param name="strStartYear">default:"1"</param>
+            <param name="strEndYear">default:"1"</param>
+            <param name="strTest">0</param>
+            <returns>the list of ditital object</returns>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.GetDigitalObjectByAggregationPage(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            get 20 digital object by aggregation and search criteria: 'CGM', 'condition', '1', '1', '1', '20'
+            </summary>
+            <param name="strAgg">"CGM","DRR"</param>
+            <param name="condition">        
+            combined multiple facet conditions and 1 search condition (up to 5 in total);
+            format: ~term^attribute
+            **e.g.  default:"1" return the whole dataset; 
+                    [facet conditions] language:English;SubjectGeoAre:Coral Gables (Fla.) [advanced search condition] title: florida
+                    ~English^Language~Coral Gables (Fla.)^SubjectGeoArea~florida^Title
+                    
+            </param>
+            <param name="strStartYear">default:"1"</param>
+            <param name="strEndYear">default:"1"</param>
+            <param name="strPage">default:"1"; current page number</param>
+            <param name="strPageLimit">20</param>
+            <returns>top 20 digital objects by aggregation,total number and year ranges</returns>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.GetDigitalObjectByLocationPage(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            get the top 20 digital object by location: '25.7195457','-80.2786619','1','20'
+            </summary>
+            <param name="strAgg">"CGM","DRR"</param>
+            <param name="strLat">latitude</param>
+            <param name="strLong">longitude</param>
+            <param name="strPage">default:"1"</param>
+            <param name="strPageLimit">20</param>
+            <returns>a list of digital objects of selected location, total number and year ranges</returns>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.addList(System.Collections.Generic.List{DPantherRESTServices.DigitalObject}@,System.Data.DataRow)">
+            <summary>
+            bulid the list of digital collections with detailed information
+            **no longer use in the new system
+            </summary>
+            <param name="li">returned list of digital collections</param>
+            <param name="dr">data record from DB</param>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.addListwizFacet(System.Collections.Generic.List{DPantherRESTServices.DigitalObjectBrif}@,System.Data.DataRow,System.String)">
+            <summary>
+            bulid the list of digital collections with detailed information
+            </summary>
+            <param name="li">returned list of digital collections</param>
+            <param name="dr">data record from DB</param>
+            <returns>bibID of each record</returns>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.addgeoList(System.Collections.Generic.List{DPantherRESTServices.GeoLocationObject}@,System.Data.DataRow)">
+            <summary>
+            add location to a distinct location list
+            </summary>
+            <param name="li">returned distinct location list</param>
+            <param name="dr">data record from DB</param>
+        </member>
+        <member name="M:DPantherRESTServices.DigitalObjectService.facetResult(System.Data.DataTable)">
+            <summary>
+            get the list of facet result
+            </summary>
+            <param name="dt">facet datatable from DB by facet type</param>
+            <returns>a list of the facet result including value and count</returns>
+        </member>
+        <member name="T:DPantherRESTServices.Global">
+            <summary>
+            global class of DPantherRESTServices
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,17 @@
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\DPantherBusiness.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\DPantherBusiness.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\CsQuery.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\DPantherModels.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\EntityFramework.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\EntityFramework.SqlServerCompact.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\System.Data.SqlServerCe.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\System.Data.SqlServerCe.Entity.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\DPantherModels.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\CsQuery.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\EntityFramework.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\bin\Release\EntityFramework.SqlServerCompact.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Release\DPantherBusiness.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Release\DPantherBusiness.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherBusiness\obj\Release\DPantherBusiness.pdb

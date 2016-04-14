@@ -1,0 +1,16 @@
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\DPantherRESTServices.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\DPantherRESTServices.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\DPantherBusiness.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\EntityFramework.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\EntityFramework.SqlServer.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\FileUploadLibrary.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\DPantherModels.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\CsQuery.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\DPantherBusiness.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\FileUploadLibrary.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\DPantherModels.pdb
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\bin\CsQuery.xml
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\obj\Release\DPantherRESTServices.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\obj\Release\DPantherRESTServices.dll
+C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\DPantherRESTServices\obj\Release\DPantherRESTServices.pdb
