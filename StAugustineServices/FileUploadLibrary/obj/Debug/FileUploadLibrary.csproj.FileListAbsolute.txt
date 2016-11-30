@@ -42,3 +42,9 @@ C:\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
 C:\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
 C:\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
 C:\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.XML
+C:\Users\patrickstanley\Desktop\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\FileUploadLibrary\bin\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\FileUploadLibrary\obj\Debug\FileUploadLibrary.csprojResolveAssemblyReference.cache

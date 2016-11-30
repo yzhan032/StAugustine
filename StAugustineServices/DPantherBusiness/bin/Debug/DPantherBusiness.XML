@@ -9,11 +9,6 @@
             database configuration class
             </summary>
         </member>
-        <member name="F:DPantherBusiness.Config.ConnectString">
-            <summary>
-            dPanther database connection string
-            </summary>
-        </member>
         <member name="F:DPantherBusiness.Config.MailHost">
             <summary>
             const of dPanther mail host
@@ -22,6 +17,11 @@
         <member name="F:DPantherBusiness.Config.LevWebMasterEmailAddress">
             <summary>
             const of dPanther web mail address
+            </summary>
+        </member>
+        <member name="F:DPantherBusiness.Config.ConnectString">
+            <summary>
+            dPanther database connection string
             </summary>
         </member>
         <member name="M:DPantherBusiness.Config.#ctor(System.String)">
@@ -227,31 +227,6 @@
             dPanther directory class
             </summary>
         </member>
-        <member name="P:DPantherBusiness.dpDirectory.dirPath">
-            <summary>
-            directory path
-            </summary>
-        </member>
-        <member name="P:DPantherBusiness.dpDirectory.webUrl">
-            <summary>
-            the web access url of the directory
-            </summary>
-        </member>
-        <member name="P:DPantherBusiness.dpDirectory.dirType">
-            <summary>
-            directory type: [1-kmlHarvest;2-kmlPublish ;3-kmlPublishURL;4-pubRequest;5-pubTpl;6-geoporatlTemp]
-            </summary>
-        </member>
-        <member name="P:DPantherBusiness.dpDirectory.applicationName">
-            <summary>
-            application name 
-            </summary>
-        </member>
-        <member name="P:DPantherBusiness.dpDirectory.applicationCode">
-            <summary>
-            applicaiton code in the database
-            </summary>
-        </member>
         <member name="M:DPantherBusiness.dpDirectory.#ctor(System.String,System.String)">
             <summary>
             directory class to manage application directories
@@ -336,74 +311,40 @@
             datatable: [dirPath], [webUrl], [dirType], [applicationName], [applicationCode], [webAccess] 
             </returns>
         </member>
-        <member name="T:DPantherBusiness.GeneralFunction">
+        <member name="P:DPantherBusiness.dpDirectory.dirPath">
             <summary>
-            general functions used in dPanther
+            directory path
             </summary>
         </member>
-        <member name="F:DPantherBusiness.GeneralFunction.dirPath">
+        <member name="P:DPantherBusiness.dpDirectory.webUrl">
             <summary>
-            directory for digital collection repository
+            the web access url of the directory
             </summary>
         </member>
-        <member name="F:DPantherBusiness.GeneralFunction.username">
+        <member name="P:DPantherBusiness.dpDirectory.dirType">
             <summary>
-            user name
+            directory type: [1-kmlHarvest;2-kmlPublish ;3-kmlPublishURL;4-pubRequest;5-pubTpl;6-geoporatlTemp]
             </summary>
         </member>
-        <member name="F:DPantherBusiness.GeneralFunction.domain">
+        <member name="P:DPantherBusiness.dpDirectory.applicationName">
             <summary>
-            domain name
+            application name 
             </summary>
         </member>
-        <member name="F:DPantherBusiness.GeneralFunction.password">
+        <member name="P:DPantherBusiness.dpDirectory.applicationCode">
             <summary>
-            user password
+            applicaiton code in the database
             </summary>
         </member>
-        <member name="M:DPantherBusiness.GeneralFunction.getPath(System.String)">
-            <summary>
-            method to get a list of image path from a mets file
-            </summary>
-            <param name="xmlPath">
-            the sub path to the mets file: "\\FI\\11\\07\\07\\21\\00001\\FI11070721_00001.mets.xml"
-            </param>
-            <returns>
-            return a ArrayList of images
-            </returns>
-        </member>
-        <member name="M:DPantherBusiness.GeneralFunction.getPathNew(System.String)">
-            <summary>
-            method to read structure map from a mets file and genereate the HTML treeview code
-            </summary>
-            <param name="xmlPath">
-            the sub path to the mets file: "\\FI\\11\\07\\07\\21\\00001\\FI11070721_00001.mets.xml"
-            </param>
-            <returns>
-            return html code for the structure map. 
-            e.g. 
-            <ul id="uldownloadTree">
-              <li>Granada Entrance. Coral Gables, Florida
-               <ul>
-                  <li><a class="CitationSectionTitle2-link">Recto</a></li>
-                  <li><a class="CitationSectionTitle2-link">Verso</a></li>
-                </ul>
-              </li>
-            </ul> 
-            </returns>
-        </member>
+        <!-- Badly formed XML comment ignored for member "T:DPantherBusiness.GeneralFunction" -->
+        <!-- Badly formed XML comment ignored for member "F:DPantherBusiness.GeneralFunction.dirPath" -->
+        <!-- Badly formed XML comment ignored for member "F:DPantherBusiness.GeneralFunction.username" -->
+        <!-- Badly formed XML comment ignored for member "F:DPantherBusiness.GeneralFunction.domain" -->
+        <!-- Badly formed XML comment ignored for member "F:DPantherBusiness.GeneralFunction.password" -->
+        <!-- Badly formed XML comment ignored for member "M:DPantherBusiness.GeneralFunction.getPath(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:DPantherBusiness.GeneralFunction.getPathNew(System.String)" -->
         <!-- Badly formed XML comment ignored for member "M:DPantherBusiness.GeneralFunction.readxml(System.Xml.XmlNodeList,System.Text.StringBuilder)" -->
-        <member name="M:DPantherBusiness.GeneralFunction.Serialize(System.Object)">
-            <summary>
-            serialize the server end array into a javascript array
-            </summary>
-            <param name="o">
-            The array on server end
-            </param>
-            <returns>
-            serialized javascript array
-            </returns>
-        </member>
+        <!-- Badly formed XML comment ignored for member "M:DPantherBusiness.GeneralFunction.Serialize(System.Object)" -->
         <member name="T:DPantherBusiness.Log">
             <summary>
             system log class
@@ -439,11 +380,6 @@
             A disposeable class that allows access to a UNC resource with credentials.
             </summary>
         </member>
-        <member name="P:DPantherBusiness.UNCAccessWithCredentials.LastError">
-            <summary>
-            The last system error code returned from NetUseAdd or NetUseDel.  Success = 0
-            </summary>
-        </member>
         <member name="M:DPantherBusiness.UNCAccessWithCredentials.NetUseWithCredentials(System.String,System.String,System.String,System.String)">
             <summary>
             Connects to a UNC path using the credentials supplied.
@@ -459,6 +395,11 @@
             Ends the connection to the remote resource 
             </summary>
             <returns>True if it succeeds.  Use LastError to get the system error code</returns>
+        </member>
+        <member name="P:DPantherBusiness.UNCAccessWithCredentials.LastError">
+            <summary>
+            The last system error code returned from NetUseAdd or NetUseDel.  Success = 0
+            </summary>
         </member>
     </members>
 </doc>

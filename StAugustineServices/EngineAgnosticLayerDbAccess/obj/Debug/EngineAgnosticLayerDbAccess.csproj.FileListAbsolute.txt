@@ -7,3 +7,8 @@ C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_sta
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\EngineAgnosticLayerDbAccess\obj\Debug\EngineAgnosticLayerDbAccess.csprojResolveAssemblyReference.cache
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\EngineAgnosticLayerDbAccess\obj\Debug\EngineAgnosticLayerDbAccess.dll
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\EngineAgnosticLayerDbAccess\obj\Debug\EngineAgnosticLayerDbAccess.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\EngineAgnosticLayerDbAccess\bin\Debug\EngineAgnosticLayerDbAccess.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\EngineAgnosticLayerDbAccess\bin\Debug\EngineAgnosticLayerDbAccess.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\EngineAgnosticLayerDbAccess\obj\Debug\EngineAgnosticLayerDbAccess.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Desktop\StAugustineServices\EngineAgnosticLayerDbAccess\obj\Debug\EngineAgnosticLayerDbAccess.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\EngineAgnosticLayerDbAccess\obj\Debug\EngineAgnosticLayerDbAccess.pdb

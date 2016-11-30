@@ -23,15 +23,7 @@ VT.UI.setting = {};
 //VT.dpService = "http://staugustine.uflib.ufl.edu/dpRestService/";
 //Line above was modified 3-29-2016 by cdr to line below for test web server environment 
 
-
-
-//VT.dpService = "http://teststaugustine.uflib.ufl.edu/dpRestService/";
-
-//Above line commented out by cdr 3-30-2016 and replaced with line below 
-
-
-VT.dpService = "http://staugustine.uflib.ufl.edu/dpRestService/";
-
+VT.dpService = "http://teststaugustine.uflib.ufl.edu/dpRestService/";
 
 VT.pageElement.aggCode = 'usach';
 
@@ -41,16 +33,7 @@ switch (top.location.hostname) {
         //VT.DPantherRestService = "http://staugustine.uflib.ufl.edu/DPantherRESTServices/";
 
 //Line above was modified 3-29-2016 by cdr to line below for test web server environment 
-
-
-//      VT.DPantherRestService = "http://teststaugustine.uflib.ufl.edu/DPantherRESTServices/";
-
-
-//line above commented out by cdr 3-31-2016 and replaced with line below
-
-
-        VT.DPantherRestService = "http://staugustine.uflib.ufl.edu/DPantherRESTServices/";
-
+        VT.DPantherRestService = "http://teststaugustine.uflib.ufl.edu/DPantherRESTServices/";
 
         break;
     default:
@@ -59,15 +42,7 @@ switch (top.location.hostname) {
 
 //Line above was modified 3-29-2016 by cdr to line below for test web server environment
 
-//      VT.DPantherRestService = "http://teststaugustine.uflib.ufl.edu/DPantherRESTServices/";
-
-
-//line above commented out by cdr 3-31-2016 and replaced with line below
-
-
-        VT.DPantherRestService = "http://staugustine.uflib.ufl.edu/DPantherRESTServices/";
-
-
+        VT.DPantherRestService = "http://teststaugustine.uflib.ufl.edu/DPantherRESTServices/";
 
         break;
 }
@@ -76,13 +51,7 @@ switch (top.location.hostname) {
 
 //Line above was modified 3-29-2016 by cdr to line below for test web server environment
 
-//VT.DigitalObjRes = "http://testufdcimages.uflib.ufl.edu/";
-
-//line above commented out by cdr 3-31-2016 and replaced with line below
-
-
-VT.DigitalObjRes = "http://ufdcimages.uflib.ufl.edu/";
-
+VT.DigitalObjRes = "http://testufdcimages.uflib.ufl.edu/";
 
 //VT.DigitalObjResNew = "http://ufdcimages.uflib.ufl.edu/imgserver/?image=/";
 
@@ -95,13 +64,16 @@ VT.DigitalObjRes = "http://ufdcimages.uflib.ufl.edu/";
 
 
 //line below edited by Keven/Cliff.  It was pointing 
-
-//  VT.DigitalObjResNew = "http://teststaugustine.uflib.ufl.edu/imgserver/?image=//flvc.fs.osg.ufl.edu/flvc-ufdc/resources/";
-
-//line above commented out by cdr 3-31-2016 and replaced with line below
+  VT.DigitalObjResNew = "http://teststaugustine.uflib.ufl.edu/imgserver/?image=//flvc.fs.osg.ufl.edu/flvc-ufdc/resources/";
+//line above commented out by Cliff at 1:04 PM, 3-30-2016; did not work, uncommented at 1:07, 3-30-2016 did not work, comm. out 1:12 3-30-2016
 
 
-  VT.DigitalObjResNew = "http://staugustine.uflib.ufl.edu/imgserver/?image=//flvc.fs.osg.ufl.edu/flvc-ufdc/resources/";
+// Changed above line to the one below PLS
+//VT.DigitalObjResNew = "http://testufdc.uflib.ufl.edu/iipimage/iipsrv.fcgi?DeepZoom=//flvc.fs.osg.ufl.edu/flvc-ufdc/resources/";
+
+//Line below test from cliff at 1:04 PM, 3-30-2016, did not work, commented out 1:07 2-30-2016
+//VT.DigitalObjResNew = "http://teststaugustine.uflib.ufl.edu/iipimage/iipsrv.fcgi?DeepZoom=//flvc.fs.osg.ufl.edu/flvc-ufdc/resources/";
+
 
 
 VT.DigitalObjectServices = VT.DPantherRestService + "DigitalObjectService/";

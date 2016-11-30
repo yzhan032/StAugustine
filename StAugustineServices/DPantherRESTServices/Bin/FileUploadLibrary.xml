@@ -11,9 +11,57 @@
             on user fields populated before the current file input but on the same form.
             </summary>
         </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FieldTestProcessor.OutputPath">
+        <member name="T:darrenjohnstone.net.FileUpload.IFileProcessor">
             <summary>
-            Gets/sets the output folder path.
+            The IFileProcessor interface defines classes which are used to
+            process an individual file coming from a form stream.
+            
+            The interface defines methods to start the file processing (with a file
+            name and content type), write data, and end the upload process.
+            
+            IFileProcessor implementations are used to write uploaded data to
+            persistant storage such as the file system or a database.
+            </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.StartNewFile(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Starts a new file.
+            </summary>
+            <param name="fileName">File name.</param>
+            <param name="contentType">The content type of the file.</param>
+            <param name="headerItems">A dictionary of items pulled from the header of the field.</param>
+            <param name="previousFields">A dictionary of previous fields.</param>
+            <returns>An optional object used to identify the item in the storage container.</returns>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes to the output file.
+            </summary>
+            <param name="buffer">Buffer to write from.</param>
+            <param name="offset">Offset in the buffer to write from.</param>
+            <param name="count">Count of bytes to write.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.EndFile">
+            <summary>
+            Ends current file processing.
+            </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.GetFileName">
+            <summary>
+            Returns the name of the file that is currently being processed.
+            Null if there is no file.
+            </summary>
+            <returns>The file name.</returns>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.GetIdentifier">
+            <summary>
+            Gets the identifier in the container.
+            </summary>
+            <returns>The container identifier.</returns>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.GetHeaderItems">
+            <summary>
+            Gets the header items.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.FieldTestProcessor.#ctor">
@@ -67,16 +115,16 @@
             Dispose of the object.
             </summary>
         </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FieldTestProcessor.OutputPath">
+            <summary>
+            Gets/sets the output folder path.
+            </summary>
+        </member>
         <member name="T:darrenjohnstone.net.FileUpload.DJAccessibleProgressBar">
             <summary>
             Provides a basic progress bar updated by refreshes in an IFrame. This allows
             support for browsers without javascript and others where the UI is blocked
             during file uploads.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJAccessibleProgressBar.ProgressURL">
-            <summary>
-            Gets/sets the URL of the progress page.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.DJAccessibleProgressBar.CreateChildControls">
@@ -89,6 +137,11 @@
             Raises the <see cref="E:System.Web.UI.Control.PreRender"/> event.
             </summary>
             <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJAccessibleProgressBar.ProgressURL">
+            <summary>
+            Gets/sets the URL of the progress page.
+            </summary>
         </member>
         <member name="T:darrenjohnstone.net.FileUpload.DummyProcessor">
             <summary>
@@ -153,11 +206,6 @@
             a directory in the file system.
             </summary>
         </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FileSystemProcessor.OutputPath">
-            <summary>
-            Gets/sets the output folder path.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.FileSystemProcessor.#ctor">
             <summary>
             Constructor.
@@ -209,10 +257,52 @@
             Dispose of the object.
             </summary>
         </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FileSystemProcessor.OutputPath">
+            <summary>
+            Gets/sets the output folder path.
+            </summary>
+        </member>
         <member name="T:darrenjohnstone.net.FileUpload.DJFileUpload">
             <summary>
             Multiple file upload control with progress bar.
             </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.DJFileUpload"/> class.
+            </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.OnLoad(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Load"/> event.
+            </summary>
+            <param name="e">The <see cref="T:System.EventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.OnInit(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.Init"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.CreateChildControls">
+            <summary>
+            Called by the ASP.NET page framework to notify server controls that use 
+            composition-based implementation to create any child controls they contain 
+            in preparation for posting back or rendering.
+            </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.val_ServerValidate(System.Object,System.Web.UI.WebControls.ServerValidateEventArgs)">
+            <summary>
+            Handles the ServerValidate event of the val control.
+            </summary>
+            <param name="source">The source of the event.</param>
+            <param name="args">The <see cref="T:System.Web.UI.WebControls.ServerValidateEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.OnPreRender(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Web.UI.Control.PreRender"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
         </member>
         <member name="P:darrenjohnstone.net.FileUpload.DJFileUpload.FileProcessor">
             <summary>
@@ -270,43 +360,6 @@
             </summary>
             <value><c>true</c> if the add button should be shown; otherwise, <c>false</c>.</value>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.DJFileUpload"/> class.
-            </summary>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.OnLoad(System.EventArgs)">
-            <summary>
-            Raises the <see cref="E:System.Web.UI.Control.Load"/> event.
-            </summary>
-            <param name="e">The <see cref="T:System.EventArgs"/> object that contains the event data.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.OnInit(System.EventArgs)">
-            <summary>
-            Raises the <see cref="E:System.Web.UI.Control.Init"/> event.
-            </summary>
-            <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.CreateChildControls">
-            <summary>
-            Called by the ASP.NET page framework to notify server controls that use 
-            composition-based implementation to create any child controls they contain 
-            in preparation for posting back or rendering.
-            </summary>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.val_ServerValidate(System.Object,System.Web.UI.WebControls.ServerValidateEventArgs)">
-            <summary>
-            Handles the ServerValidate event of the val control.
-            </summary>
-            <param name="source">The source of the event.</param>
-            <param name="args">The <see cref="T:System.Web.UI.WebControls.ServerValidateEventArgs"/> instance containing the event data.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.DJFileUpload.OnPreRender(System.EventArgs)">
-            <summary>
-            Raises the <see cref="E:System.Web.UI.Control.PreRender"/> event.
-            </summary>
-            <param name="e">An <see cref="T:System.EventArgs"/> object that contains the event data.</param>
-        </member>
         <member name="T:darrenjohnstone.net.FileUpload.FileEventHandler">
             <summary>
             Delegate for file events.
@@ -339,21 +392,11 @@
             file by file basis.
             </summary>
         </member>
-        <member name="E:darrenjohnstone.net.FileUpload.FormStream.Error">
-            <summary>
-            Fired when an exception occurs.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.OnError(System.Exception)">
             <summary>
             Fires the error event.
             </summary>
             <param name="ex">Exception information.</param>
-        </member>
-        <member name="E:darrenjohnstone.net.FileUpload.FormStream.FileStarted">
-            <summary>
-            Fired when a new file is started.
-            </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.OnFileStarted(System.String,System.Object)">
             <summary>
@@ -365,11 +408,6 @@
             used to identify the item in the storage container.
             </param>
         </member>
-        <member name="E:darrenjohnstone.net.FileUpload.FormStream.FileCompleted">
-            <summary>
-            Fired when a file is completed sucessfully.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.OnFileCompleted(System.String,System.Object)">
             <summary>
             Fires the FileCompleted event.
@@ -379,11 +417,6 @@
             An optional identifier passed from the processor and 
             used to identify the item in the storage container.
             </param>
-        </member>
-        <member name="E:darrenjohnstone.net.FileUpload.FormStream.FileCompletedError">
-            <summary>
-            Fired when a file is discarded because of an error.
-            </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.OnFileCompletedError(System.String,System.Object,System.Exception)">
             <summary>
@@ -396,66 +429,6 @@
             </param>
             <param name="ex">The exception raised.</param>
         </member>
-        <member name="T:darrenjohnstone.net.FileUpload.FormStream.SectionResult">
-            <summary>
-            Defines the result of processing of a single section.
-            </summary>
-        </member>
-        <member name="T:darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction">
-            <summary>
-            Defines the possible actions to take at the end of a section.
-            </summary>
-        </member>
-        <member name="F:darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction.BoundaryReached">
-            <summary>
-            A boundary has been reached. End the current file or field and look for the next header.
-            The next header may also by the end of the content.
-            </summary>
-        </member>
-        <member name="F:darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction.NoBoundaryKeepBuffer">
-            <summary>
-            No boundary was found. Keep back a buffer and move on.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.SectionResult.NextAction">
-            <summary>
-            Get/sets the next action to carry out.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.SectionResult.NextOffset">
-            <summary>
-            Gets/sets the next offset to process.
-            </summary>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.FormStream.SectionResult.#ctor(System.Int32,darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="nextOffset">The next offset to process.</param>
-            <param name="nextAction">The next action to complete.</param>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.PreviousFields">
-            <summary>
-            Gets the previous fileds.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.ContentMinusFiles">
-            <summary>
-            Gets a byte array containing the content of the form without
-            any uploaded files.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.StatusKey">
-            <summary>
-            Gets the status key.
-            </summary>
-            <value>The status key.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.Processor">
-            <summary>
-            Gets the processor.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.#ctor(darrenjohnstone.net.FileUpload.IFileProcessor,System.String,System.Text.Encoding)">
             <summary>
             Constructor.
@@ -464,34 +437,9 @@
             <param name="boundary">The boundary (delimiter) of the post.</param>
             <param name="encoding">The encoder of the request stream.</param>
         </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.CanRead">
-            <summary>
-            Determines if the stream can be read.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.CanSeek">
-            <summary>
-            Determines if seek operations are valid on the stream.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.CanWrite">
-            <summary>
-            Determines if write operations are valid on the stream.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.Flush">
             <summary>
             Flushes the output buffer of the stream.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.Length">
-            <summary>
-            Gets the current length of the stream.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FormStream.Position">
-            <summary>
-            Gets the current position in the stream.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.FormStream.Read(System.Byte[],System.Int32,System.Int32)">
@@ -597,57 +545,109 @@
             Dispose of the object.
             </summary>
         </member>
-        <member name="T:darrenjohnstone.net.FileUpload.IFileProcessor">
+        <member name="E:darrenjohnstone.net.FileUpload.FormStream.Error">
             <summary>
-            The IFileProcessor interface defines classes which are used to
-            process an individual file coming from a form stream.
-            
-            The interface defines methods to start the file processing (with a file
-            name and content type), write data, and end the upload process.
-            
-            IFileProcessor implementations are used to write uploaded data to
-            persistant storage such as the file system or a database.
+            Fired when an exception occurs.
             </summary>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.StartNewFile(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+        <member name="E:darrenjohnstone.net.FileUpload.FormStream.FileStarted">
             <summary>
-            Starts a new file.
-            </summary>
-            <param name="fileName">File name.</param>
-            <param name="contentType">The content type of the file.</param>
-            <param name="headerItems">A dictionary of items pulled from the header of the field.</param>
-            <param name="previousFields">A dictionary of previous fields.</param>
-            <returns>An optional object used to identify the item in the storage container.</returns>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.Write(System.Byte[],System.Int32,System.Int32)">
-            <summary>
-            Writes to the output file.
-            </summary>
-            <param name="buffer">Buffer to write from.</param>
-            <param name="offset">Offset in the buffer to write from.</param>
-            <param name="count">Count of bytes to write.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.EndFile">
-            <summary>
-            Ends current file processing.
+            Fired when a new file is started.
             </summary>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.GetFileName">
+        <member name="E:darrenjohnstone.net.FileUpload.FormStream.FileCompleted">
             <summary>
-            Returns the name of the file that is currently being processed.
-            Null if there is no file.
+            Fired when a file is completed sucessfully.
             </summary>
-            <returns>The file name.</returns>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.GetIdentifier">
+        <member name="E:darrenjohnstone.net.FileUpload.FormStream.FileCompletedError">
             <summary>
-            Gets the identifier in the container.
+            Fired when a file is discarded because of an error.
             </summary>
-            <returns>The container identifier.</returns>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.IFileProcessor.GetHeaderItems">
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.PreviousFields">
             <summary>
-            Gets the header items.
+            Gets the previous fileds.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.ContentMinusFiles">
+            <summary>
+            Gets a byte array containing the content of the form without
+            any uploaded files.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.StatusKey">
+            <summary>
+            Gets the status key.
+            </summary>
+            <value>The status key.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.Processor">
+            <summary>
+            Gets the processor.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.CanRead">
+            <summary>
+            Determines if the stream can be read.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.CanSeek">
+            <summary>
+            Determines if seek operations are valid on the stream.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.CanWrite">
+            <summary>
+            Determines if write operations are valid on the stream.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.Length">
+            <summary>
+            Gets the current length of the stream.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.Position">
+            <summary>
+            Gets the current position in the stream.
+            </summary>
+        </member>
+        <member name="T:darrenjohnstone.net.FileUpload.FormStream.SectionResult">
+            <summary>
+            Defines the result of processing of a single section.
+            </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.FormStream.SectionResult.#ctor(System.Int32,darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="nextOffset">The next offset to process.</param>
+            <param name="nextAction">The next action to complete.</param>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.SectionResult.NextAction">
+            <summary>
+            Get/sets the next action to carry out.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FormStream.SectionResult.NextOffset">
+            <summary>
+            Gets/sets the next offset to process.
+            </summary>
+        </member>
+        <member name="T:darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction">
+            <summary>
+            Defines the possible actions to take at the end of a section.
+            </summary>
+        </member>
+        <member name="F:darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction.BoundaryReached">
+            <summary>
+            A boundary has been reached. End the current file or field and look for the next header.
+            The next header may also by the end of the content.
+            </summary>
+        </member>
+        <member name="F:darrenjohnstone.net.FileUpload.FormStream.SectionResult.SectionAction.NoBoundaryKeepBuffer">
+            <summary>
+            No boundary was found. Keep back a buffer and move on.
             </summary>
         </member>
         <member name="T:darrenjohnstone.net.FileUpload.SettingsStorageObject">
@@ -680,6 +680,12 @@
             Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.SQLFileDownloadHandler"/> class.
             </summary>
         </member>
+        <member name="M:darrenjohnstone.net.FileUpload.SQLFileDownloadHandler.ProcessRequest(System.Web.HttpContext)">
+            <summary>
+            Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler"/> interface.
+            </summary>
+            <param name="context">An <see cref="T:System.Web.HttpContext"/> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
+        </member>
         <member name="P:darrenjohnstone.net.FileUpload.SQLFileDownloadHandler.IsReusable">
             <summary>
             Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler"/> instance.
@@ -687,32 +693,9 @@
             <value></value>
             <returns>true if the <see cref="T:System.Web.IHttpHandler"/> instance is reusable; otherwise, false.</returns>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.SQLFileDownloadHandler.ProcessRequest(System.Web.HttpContext)">
-            <summary>
-            Enables processing of HTTP Web requests by a custom HttpHandler that implements the <see cref="T:System.Web.IHttpHandler"/> interface.
-            </summary>
-            <param name="context">An <see cref="T:System.Web.HttpContext"/> object that provides references to the intrinsic server objects (for example, Request, Response, Session, and Server) used to service HTTP requests.</param>
-        </member>
         <member name="T:darrenjohnstone.net.FileUpload.SQLProcessor">
             <summary>
             Implements the IFileSystemProcessor interface to provide a processor for streaming uploads into a SQL database.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.SQLProcessor.ConnectionConfig">
-            <summary>
-            Gets or sets the name of the connection string config setting.
-            </summary>
-            <value>The connection string config name.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.SQLProcessor.ConnectionString">
-            <summary>
-            Gets or sets the connection string.
-            </summary>
-            <value>The connection string.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.SQLProcessor.TableName">
-            <summary>
-            Gets/sets the table name to store the files in.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.SQLProcessor.#ctor">
@@ -820,74 +803,26 @@
             Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
             </summary>
         </member>
+        <member name="P:darrenjohnstone.net.FileUpload.SQLProcessor.ConnectionConfig">
+            <summary>
+            Gets or sets the name of the connection string config setting.
+            </summary>
+            <value>The connection string config name.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.SQLProcessor.ConnectionString">
+            <summary>
+            Gets or sets the connection string.
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.SQLProcessor.TableName">
+            <summary>
+            Gets/sets the table name to store the files in.
+            </summary>
+        </member>
         <member name="T:darrenjohnstone.net.FileUpload.DJUploadController">
             <summary>
             Controller for uploads. Must be placed before all upload controls on the page.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.DefaultFileProcessor">
-            <summary>
-            Gets/sets the default file processor.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.AllowedFileExtensions">
-            <summary>
-            Gets or sets the allowed file extensions (a comma separated list .pdf,.zip,.gif).
-            </summary>
-            <value>The allowed file extensions.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.Status">
-            <summary>
-            Gets or sets the upload status.
-            </summary>
-            <value>The upload status.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ScriptPath">
-            <summary>
-            Gets or sets the path to the script file.
-            </summary>
-            <value>The script path.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.CSSPath">
-            <summary>
-            Gets or sets the path to the css file.
-            </summary>
-            <value>The image path.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ProgressUrl">
-            <summary>
-            Gets or sets the url of the progress page.
-            </summary>
-            <value>The URL of the progress page.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ImagePath">
-            <summary>
-            Gets or sets the image path.
-            </summary>
-            <value>The image path.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ShowCancelButton">
-            <summary>
-            Gets or sets a value indicating whether the cancel button should be shown.
-            </summary>
-            <value><c>true</c> if the cancel button should be shown; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ShowProgressBar">
-            <summary>
-            Gets or sets a value indicating whether the progress bar should be shown.
-            </summary>
-            <value><c>true</c> if the progress bar should be shown; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.EnableManualProcessing">
-            <summary>
-            Gets or sets a value indicating whether manual processing should be allowed if the
-            upload module is not installed.
-            </summary>
-            <value><c>true</c> if manual processing is allowed; otherwise, <c>false</c>.</value>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.UploadID">
-            <summary>
-            Gets the upload ID.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.DJUploadController.#ctor">
@@ -957,6 +892,71 @@
             <param name="page">The page to check.</param>
             <returns>The upload controller.</returns>
         </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.DefaultFileProcessor">
+            <summary>
+            Gets/sets the default file processor.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.AllowedFileExtensions">
+            <summary>
+            Gets or sets the allowed file extensions (a comma separated list .pdf,.zip,.gif).
+            </summary>
+            <value>The allowed file extensions.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.Status">
+            <summary>
+            Gets or sets the upload status.
+            </summary>
+            <value>The upload status.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ScriptPath">
+            <summary>
+            Gets or sets the path to the script file.
+            </summary>
+            <value>The script path.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.CSSPath">
+            <summary>
+            Gets or sets the path to the css file.
+            </summary>
+            <value>The image path.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ProgressUrl">
+            <summary>
+            Gets or sets the url of the progress page.
+            </summary>
+            <value>The URL of the progress page.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ImagePath">
+            <summary>
+            Gets or sets the image path.
+            </summary>
+            <value>The image path.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ShowCancelButton">
+            <summary>
+            Gets or sets a value indicating whether the cancel button should be shown.
+            </summary>
+            <value><c>true</c> if the cancel button should be shown; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.ShowProgressBar">
+            <summary>
+            Gets or sets a value indicating whether the progress bar should be shown.
+            </summary>
+            <value><c>true</c> if the progress bar should be shown; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.EnableManualProcessing">
+            <summary>
+            Gets or sets a value indicating whether manual processing should be allowed if the
+            upload module is not installed.
+            </summary>
+            <value><c>true</c> if manual processing is allowed; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.DJUploadController.UploadID">
+            <summary>
+            Gets the upload ID.
+            </summary>
+        </member>
         <member name="T:darrenjohnstone.net.FileUpload.UploadConfigurationSection">
             <summary>
             Configuration section for the upload module. Defines global settings for the module
@@ -967,6 +967,12 @@
             <summary>
             Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.UploadConfigurationSection"/> class.
             </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadConfigurationSection.GetConfig">
+            <summary>
+            Gets the configuration section.
+            </summary>
+            <returns>The configuration section.</returns>
         </member>
         <member name="P:darrenjohnstone.net.FileUpload.UploadConfigurationSection.LengthExceededHttpCode">
             <summary>
@@ -1023,16 +1029,27 @@
             </summary>
             <value><c>true</c> if manual processing is allowed; otherwise, <c>false</c>.</value>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadConfigurationSection.GetConfig">
-            <summary>
-            Gets the configuration section.
-            </summary>
-            <returns>The configuration section.</returns>
-        </member>
         <member name="T:darrenjohnstone.net.FileUpload.UploadedFile">
             <summary>
             Contains identifying information about an uploaded file.
             </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadedFile.#ctor(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.UploadedFile"/> class.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="identifier">The identifier.</param>
+            <param name="headerItems">The header items.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadedFile.#ctor(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,System.String},System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.UploadedFile"/> class.
+            </summary>
+            <param name="fileName">Name of the file.</param>
+            <param name="identifier">The identifier.</param>
+            <param name="headerItems">The header items.</param>
+            <param name="ex">The exception that was raised.</param>
         </member>
         <member name="P:darrenjohnstone.net.FileUpload.UploadedFile.FileName">
             <summary>
@@ -1055,31 +1072,9 @@
             </summary>
             <value>The exception.</value>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadedFile.#ctor(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,System.String})">
-            <summary>
-            Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.UploadedFile"/> class.
-            </summary>
-            <param name="fileName">Name of the file.</param>
-            <param name="identifier">The identifier.</param>
-            <param name="headerItems">The header items.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadedFile.#ctor(System.String,System.Object,System.Collections.Generic.Dictionary{System.String,System.String},System.Exception)">
-            <summary>
-            Initializes a new instance of the <see cref="T:darrenjohnstone.net.FileUpload.UploadedFile"/> class.
-            </summary>
-            <param name="fileName">Name of the file.</param>
-            <param name="identifier">The identifier.</param>
-            <param name="headerItems">The header items.</param>
-            <param name="ex">The exception that was raised.</param>
-        </member>
         <member name="T:darrenjohnstone.net.FileUpload.FileProcessorInitEventArgs">
             <summary>
             Event arguments for the ProcessorInit event.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.FileProcessorInitEventArgs.Processor">
-            <summary>
-            Gets the file processor.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.FileProcessorInitEventArgs.#ctor(darrenjohnstone.net.FileUpload.IFileProcessor)">
@@ -1087,6 +1082,11 @@
             Constructor.
             </summary>
             <param name="processor">File processor instance.</param>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.FileProcessorInitEventArgs.Processor">
+            <summary>
+            Gets the file processor.
+            </summary>
         </member>
         <member name="T:darrenjohnstone.net.FileUpload.FileProcessorInitEventHandler">
             <summary>
@@ -1113,12 +1113,6 @@
             Initializes the <see cref="T:darrenjohnstone.net.FileUpload.UploadManager"/> class.
             </summary>
         </member>
-        <member name="E:darrenjohnstone.net.FileUpload.UploadManager.ProcessorInit">
-            <summary>
-            Fired when a processor is initialised but before it is used.
-            Set processor properties here.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.UploadManager.OnProcessorInit(darrenjohnstone.net.FileUpload.IFileProcessor)">
             <summary>
             Fires the ProcessorInit event.
@@ -1131,6 +1125,34 @@
             </summary>
             <param name="status">Status to set.</param>
             <param name="key">Upload key.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadManager.GetProcessor">
+            <summary>
+            Factory method creates a new instance of IFileProcessor.
+            </summary>
+            <returns>The created file processor.</returns>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadManager.SerializeProcessor(darrenjohnstone.net.FileUpload.IFileProcessor)">
+            <summary>
+            Serializes a processor to a string. The string is encrypted and validated.
+            Thanks to Dean Brettle for help with this http://www.brettle.com.
+            </summary>
+            <param name="processor">Processor to serialize.</param>
+            <returns>The serialized processor.</returns>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadManager.DeserializeProcessor(System.String)">
+            <summary>
+            Deserializes a processor from an encrypted string. The string is encrypted and validated.
+            Thanks to Dean Brettle for help with this http://www.brettle.com.
+            </summary>
+            <param name="input">The encrypted and signed input string.</param>
+            <returns>The deserialized processor.</returns>
+        </member>
+        <member name="E:darrenjohnstone.net.FileUpload.UploadManager.ProcessorInit">
+            <summary>
+            Fired when a processor is initialised but before it is used.
+            Set processor properties here.
+            </summary>
         </member>
         <member name="P:darrenjohnstone.net.FileUpload.UploadManager.ModuleInstalled">
             <summary>
@@ -1157,38 +1179,11 @@
             Gets/sets the processor type (must implement IFileProcessor).
             </summary>
         </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadManager.GetProcessor">
-            <summary>
-            Factory method creates a new instance of IFileProcessor.
-            </summary>
-            <returns>The created file processor.</returns>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadManager.SerializeProcessor(darrenjohnstone.net.FileUpload.IFileProcessor)">
-            <summary>
-            Serializes a processor to a string. The string is encrypted and validated.
-            Thanks to Dean Brettle for help with this http://www.brettle.com.
-            </summary>
-            <param name="processor">Processor to serialize.</param>
-            <returns>The serialized processor.</returns>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadManager.DeserializeProcessor(System.String)">
-            <summary>
-            Deserializes a processor from an encrypted string. The string is encrypted and validated.
-            Thanks to Dean Brettle for help with this http://www.brettle.com.
-            </summary>
-            <param name="input">The encrypted and signed input string.</param>
-            <returns>The deserialized processor.</returns>
-        </member>
         <member name="T:darrenjohnstone.net.FileUpload.UploadModule">
             <summary>
             Http handler which can process very large file uploads
             by passing the request stream to a FormStream instance
             for persistance by an IFileProcessor implementation.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.UploadModule.Status">
-            <summary>
-            Gets the current upload status.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.UploadModule.#ctor">
@@ -1282,11 +1277,6 @@
             <param name="context">Http context.</param>
             <returns>The maximum request length (in kb).</returns>
         </member>
-        <member name="P:darrenjohnstone.net.FileUpload.UploadModule.LengthExceededHttpCode">
-            <summary>
-            Gets the HTTP code to return if the maximum length is exceeded.
-            </summary>
-        </member>
         <member name="M:darrenjohnstone.net.FileUpload.UploadModule.EndRequestOnRequestLengthExceeded(System.Web.HttpResponse,System.Web.HttpWorkerRequest,System.Web.HttpContext,System.Boolean)">
             <summary>
             Ends the request if the maximum request length is exceeded.
@@ -1296,14 +1286,19 @@
             <param name="context"> HttpContext </param>
             <param name="worker"> HttpWorkerRequest </param>
         </member>
+        <member name="P:darrenjohnstone.net.FileUpload.UploadModule.Status">
+            <summary>
+            Gets the current upload status.
+            </summary>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.UploadModule.LengthExceededHttpCode">
+            <summary>
+            Gets the HTTP code to return if the maximum length is exceeded.
+            </summary>
+        </member>
         <member name="T:darrenjohnstone.net.FileUpload.UploadProgressHandler">
             <summary>
             An HTTP handler used to get progress information on a file upload.
-            </summary>
-        </member>
-        <member name="P:darrenjohnstone.net.FileUpload.UploadProgressHandler.IsReusable">
-            <summary>
-            Return false to indicate that the handler is not reusable.
             </summary>
         </member>
         <member name="M:darrenjohnstone.net.FileUpload.UploadProgressHandler.ProcessRequest(System.Web.HttpContext)">
@@ -1311,6 +1306,11 @@
             Processes a request.
             </summary>
             <param name="context">HTTP context.</param>
+        </member>
+        <member name="P:darrenjohnstone.net.FileUpload.UploadProgressHandler.IsReusable">
+            <summary>
+            Return false to indicate that the handler is not reusable.
+            </summary>
         </member>
         <member name="T:darrenjohnstone.net.FileUpload.UploadStatus">
             <summary>
@@ -1321,6 +1321,42 @@
         </member>
         <member name="F:darrenjohnstone.net.FileUpload.UploadStatus.EMPTY_STATUS">
             <summary> Empty status string for the generated HTML </summary>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.UpdateFile(System.String,System.Object)">
+            <summary>
+            Updates the file being processed.
+            </summary>
+            <param name="fileName">File name.</param>
+            <param name="identifier">Container identifier.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.UpdateBytes(System.Int64,System.String,System.Object)">
+            <summary>
+            Updates the byte count.
+            </summary>
+            <param name="bytes">New byte count.</param>
+            <param name="fileName">The name of the current file.</param>
+            <param name="identifier">The container ID.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.AddAttribute(System.Xml.XmlDocument,System.Xml.XmlNode,System.String,System.String)">
+            <summary>
+            Adds an attribute to an XML node.
+            </summary>
+            <param name="doc">XML document.</param>
+            <param name="node">Node to add to.</param>
+            <param name="name">Attribute name.</param>
+            <param name="value">Attribute value.</param>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.Serialize">
+            <summary>
+            Serializes key properties of the object into an XML document.
+            </summary>
+            <returns>The serialized XML document.</returns>
+        </member>
+        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.#ctor(System.Int64)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="requestSize">The size of the request.</param>
         </member>
         <member name="P:darrenjohnstone.net.FileUpload.UploadStatus.UploadedFiles">
             <summary>
@@ -1371,42 +1407,6 @@
             <summary>
             Gets the time the upload started.
             </summary>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.UpdateFile(System.String,System.Object)">
-            <summary>
-            Updates the file being processed.
-            </summary>
-            <param name="fileName">File name.</param>
-            <param name="identifier">Container identifier.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.UpdateBytes(System.Int64,System.String,System.Object)">
-            <summary>
-            Updates the byte count.
-            </summary>
-            <param name="bytes">New byte count.</param>
-            <param name="fileName">The name of the current file.</param>
-            <param name="identifier">The container ID.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.AddAttribute(System.Xml.XmlDocument,System.Xml.XmlNode,System.String,System.String)">
-            <summary>
-            Adds an attribute to an XML node.
-            </summary>
-            <param name="doc">XML document.</param>
-            <param name="node">Node to add to.</param>
-            <param name="name">Attribute name.</param>
-            <param name="value">Attribute value.</param>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.Serialize">
-            <summary>
-            Serializes key properties of the object into an XML document.
-            </summary>
-            <returns>The serialized XML document.</returns>
-        </member>
-        <member name="M:darrenjohnstone.net.FileUpload.UploadStatus.#ctor(System.Int64)">
-            <summary>
-            Constructor.
-            </summary>
-            <param name="requestSize">The size of the request.</param>
         </member>
         <member name="T:darrenjohnstone.net.FileUpload.UploadWorkerRequest">
             <summary>

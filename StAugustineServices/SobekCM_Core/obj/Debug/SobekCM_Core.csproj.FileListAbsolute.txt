@@ -28,3 +28,32 @@ C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_sta
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\SobekCM_Core\obj\Debug\SobekCM_Core.csprojResolveAssemblyReference.cache
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\SobekCM_Core\obj\Debug\SobekCM_Core.dll
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\SobekCM_Core\obj\Debug\SobekCM_Core.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Core.XML
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Core.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Core.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\EngineAgnosticLayerDbAccess.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Jil.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\protobuf-net.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Resource_Object.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Tools.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Zoom.Net.YazSharp.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Zoom.Net.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SolrNet.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Sigil.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\EngineAgnosticLayerDbAccess.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Resource_Object.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Resource_Object.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Tools.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SobekCM_Tools.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Jil.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Jil.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\protobuf-net.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\protobuf-net.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SolrNet.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\SolrNet.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Sigil.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\bin\Debug\Sigil.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\obj\Debug\SobekCM_Core.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\obj\Debug\SobekCM_Core.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Core\obj\Debug\SobekCM_Core.pdb

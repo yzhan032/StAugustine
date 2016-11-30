@@ -30,3 +30,35 @@ C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_sta
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\SobekCM_Engine_Library\obj\Debug\SobekCM_Engine_Library.csprojResolveAssemblyReference.cache
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\SobekCM_Engine_Library\obj\Debug\SobekCM_Engine_Library.dll
 C:\Users\patrickstanley\Documents\Visual Studio 2012\Projects\stAug\dpanther_stagustine\SobekCM_Engine_Library\obj\Debug\SobekCM_Engine_Library.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Engine_Library.XML
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Engine_Library.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Engine_Library.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\EngineAgnosticLayerDbAccess.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Jil.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\protobuf-net.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Core.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Resource_Object.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Tools.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SolrNet.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Zoom.Net.YazSharp.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Zoom.Net.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Sigil.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\EngineAgnosticLayerDbAccess.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Core.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Core.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Resource_Object.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Resource_Object.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Tools.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SobekCM_Tools.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Jil.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Jil.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\protobuf-net.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\protobuf-net.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SolrNet.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\SolrNet.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Sigil.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\bin\Debug\Sigil.xml
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\obj\Debug\SobekCM_Engine_Library.csprojResolveAssemblyReference.cache
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\obj\Debug\SobekCM_Engine_Library.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\SobekCM_Engine_Library\obj\Debug\SobekCM_Engine_Library.pdb

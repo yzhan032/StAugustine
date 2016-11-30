@@ -38,3 +38,8 @@ C:\projects\saug\DPantherModels\bin\Debug\DPantherModels.pdb
 C:\projects\saug\DPantherModels\obj\Debug\DPantherModels.csprojResolveAssemblyReference.cache
 C:\projects\saug\DPantherModels\obj\Debug\DPantherModels.dll
 C:\projects\saug\DPantherModels\obj\Debug\DPantherModels.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\DPantherModels\bin\Debug\DPantherModels.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\DPantherModels\bin\Debug\DPantherModels.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\DPantherModels\obj\Debug\DPantherModels.dll
+C:\Users\patrickstanley\Desktop\StAugustineServices\DPantherModels\obj\Debug\DPantherModels.pdb
+C:\Users\patrickstanley\Desktop\StAugustineServices\DPantherModels\obj\Debug\DPantherModels.csprojResolveAssemblyReference.cache
